@@ -11,14 +11,14 @@ const cors=require('cors')
 const app = express()
 const port = 5000
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://foodordering-seven.vercel.app/");
+  res.setHeader("Access-Control-Allow-Origin", "https://foodordering-seven.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
 });
-app.use(cors({origin:["https://foodordering-seven.vercel.app/"],
+app.use(cors({origin:["https://foodordering-seven.vercel.app"],
 methods:["POST","GET"],
 credentials: true
 }));
