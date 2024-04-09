@@ -19,7 +19,7 @@ import MyOrder from './screens/MyOrder';
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router basename='/'>
         <div>
           <Routes>
             <Route exact path="/" element={<Home />} />
